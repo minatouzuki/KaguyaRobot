@@ -1,1 +1,1 @@
-web: python3 -m perry
+web: python3 -m kaguya
