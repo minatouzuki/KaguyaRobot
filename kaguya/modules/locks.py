@@ -8,20 +8,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import perry.modules.sql.locks_sql as sql
-from perry import dispatcher, SUDO_USERS, LOGGER
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.chat_status import (
+import kaguya.modules.sql.locks_sql as sql
+from kaguya import dispatcher, SUDO_USERS, LOGGER
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from perry.modules.log_channel import loggable
-from perry.modules.connection import connected
+from kaguya.modules.log_channel import loggable
+from kaguya.modules.connection import connected
 
-from perry.modules.helper_funcs.alternate import send_message, typing_action
+from kaguya.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
