@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Boolean, Integer
 
-from perry.modules.sql import BASE, SESSION
+from kaguya.modules.sql import BASE, SESSION
 
 
 class AFK(BASE):
