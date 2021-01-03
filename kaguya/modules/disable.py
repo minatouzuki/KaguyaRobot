@@ -15,7 +15,7 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-    from perry.modules.helper_funcs.chat_status import (
+    from kaguya.modules.helper_funcs.chat_status import (
         user_admin,
         is_user_admin,
     )
