@@ -6,8 +6,8 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import perry.modules.sql.global_bans_sql as sql
-from perry import (
+import kaguya.modules.sql.global_bans_sql as sql
+from kaguya import (
     dispatcher,
     OWNER_ID,
     SUDO_USERS,
@@ -16,14 +16,14 @@ from perry import (
     MESSAGE_DUMP,
     spamwtc,
 )
-from perry.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from perry.modules.helper_funcs.extraction import (
+from kaguya.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from kaguya.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from perry.modules.helper_funcs.filters import CustomFilters
-from perry.modules.helper_funcs.alternate import typing_action, send_action
-from perry.modules.sql.users_sql import get_all_chats
+from kaguya.modules.helper_funcs.filters import CustomFilters
+from kaguya.modules.helper_funcs.alternate import typing_action, send_action
+from kaguya.modules.sql.users_sql import get_all_chats
 
 GBAN_ENFORCE_GROUP = 6
 
