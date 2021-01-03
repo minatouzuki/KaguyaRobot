@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import perry.modules.sql.notes_sql as sql
-from perry import dispatcher, LOGGER, OWNER_ID, MESSAGE_DUMP
-from perry.__main__ import DATA_IMPORT
-from perry.modules.helper_funcs.chat_status import user_admin
-from perry.modules.helper_funcs.alternate import typing_action
+import kaguya.modules.sql.notes_sql as sql
+from kaguya import dispatcher, LOGGER, OWNER_ID, MESSAGE_DUMP
+from kaguya.__main__ import DATA_IMPORT
+from kaguya.modules.helper_funcs.chat_status import user_admin
+from kaguya.modules.helper_funcs.alternate import typing_action
 
-# from perry.modules.rules import get_rules
-import perry.modules.sql.rules_sql as rulessql
+# from kaguya.modules.rules import get_rules
+import kaguya.modules.sql.rules_sql as rulessql
 
-# from perry.modules.sql import warns_sql as warnssql
-import perry.modules.sql.blacklist_sql as blacklistsql
-from perry.modules.sql import disable_sql as disabledsql
+# from kaguya.modules.sql import warns_sql as warnssql
+import kaguya.modules.sql.blacklist_sql as blacklistsql
+from kaguya.modules.sql import disable_sql as disabledsql
 
-# from perry.modules.sql import cust_filters_sql as filtersql
-# import perry.modules.sql.welcome_sql as welcsql
-import perry.modules.sql.locks_sql as locksql
-from perry.modules.connection import connected
+# from kaguya.modules.sql import cust_filters_sql as filtersql
+# import kaguya.modules.sql.welcome_sql as welcsql
+import kaguya.modules.sql.locks_sql as locksql
+from kaguya.modules.connection import connected
 
 
 @user_admin
