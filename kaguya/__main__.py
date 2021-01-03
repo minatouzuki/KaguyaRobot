@@ -13,7 +13,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 
-from perry import (
+from kaguya import (
     dispatcher,
     updater,
     TOKEN,
@@ -29,11 +29,11 @@ from perry import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from perry.modules import ALL_MODULES
-from perry.modules.purge import client
-from perry.modules.helper_funcs.chat_status import is_user_admin
-from perry.modules.helper_funcs.misc import paginate_modules
-from perry.modules.helper_funcs.alternate import typing_action
+from kaguya.modules import ALL_MODULES
+from kaguya.modules.purge import client
+from kaguya.modules.helper_funcs.chat_status import is_user_admin
+from kaguya.modules.helper_funcs.misc import paginate_modules
+from kaguya.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
@@ -42,7 +42,7 @@ Hey there! My name is <b>{dispatcher.bot.first_name}</b>. If you have any questi
 I'm here to make your group management fun and easy!
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
 
-Any issues or need help related to me? Contact @YumiUzo_bot for reports!
+
 
 Wanna add me to your group? Just click the button below!
 """
@@ -50,9 +50,9 @@ Wanna add me to your group? Just click the button below!
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/platapusbot?startgroup=true"
+            text="Add to Group 👥", url="t.me/KaguyaRobot?startgroup=true"
         ),
-        InlineKeyboardButton(text="Updates 📢", url="https://t.me/FinfBotNews"),
+        InlineKeyboardButton(text="Updates 📢", url="https://t.me/utahaupd"),
     ]
 ]
 
