@@ -10,8 +10,8 @@ from sqlalchemy import (
     func,
 )
 
-from perry import dispatcher
-from perry.modules.sql import BASE, SESSION
+from kaguya import dispatcher
+from kaguya.modules.sql import BASE, SESSION
 
 
 class Users(BASE):
