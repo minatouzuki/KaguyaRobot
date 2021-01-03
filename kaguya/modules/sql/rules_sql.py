@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct
 
-from perry.modules.sql import SESSION, BASE
+from kaguya.modules.sql import SESSION, BASE
 
 
 class Rules(BASE):
