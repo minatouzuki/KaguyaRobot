@@ -11,8 +11,8 @@ from sqlalchemy import (
     distinct,
 )
 
-from perry.modules.helper_funcs.msg_types import Types
-from perry.modules.sql import SESSION, BASE
+from kaguya.modules.helper_funcs.msg_types import Types
+from kaguya.modules.sql import SESSION, BASE
 
 
 class Notes(BASE):
