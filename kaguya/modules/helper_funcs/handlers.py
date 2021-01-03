@@ -2,7 +2,7 @@ import telegram.ext as tg
 from telegram import Update
 
 try:
-    from perry import CUSTOM_CMD
+    from kaguya import CUSTOM_CMD
 except:
     CUSTOM_CMD = False
 
