@@ -8,9 +8,9 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import TelegramError
 from telegram.utils.helpers import mention_html
 
-from perry import dispatcher
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.alternate import typing_action
+from kaguya import dispatcher
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.alternate import typing_action
 
 
 @typing_action
