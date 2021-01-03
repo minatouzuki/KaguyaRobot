@@ -16,7 +16,7 @@ logging.getLogger("apscheduler").setLevel(logging.WARNING)
 
 LOGGER = logging.getLogger(__name__)
 
-LOGGER.info("Perry woke up!")
+LOGGER.info("kaguya woke up!")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
@@ -103,7 +103,7 @@ if ENV:
     SPAMWATCH = os.environ.get("SPAMWATCH_API", None)
 
 else:
-    from perry.config import Development as Config
+    from kaguya.config import Development as Config
 
     TOKEN = Config.API_KEY
     try:
@@ -191,7 +191,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
 
 # Load at end to ensure all prev variables have been set
-from perry.modules.helper_funcs.handlers import CustomCommandHandler
+from kaguya.modules.helper_funcs.handlers import CustomCommandHandler
 
 if CUSTOM_CMD and len(CUSTOM_CMD) >= 1:
     tg.CommandHandler = CustomCommandHandler
