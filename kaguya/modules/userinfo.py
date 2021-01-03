@@ -5,11 +5,11 @@ from telegram import Message, User
 from telegram import ParseMode, MAX_MESSAGE_LENGTH
 from telegram.utils.helpers import escape_markdown
 
-import perry.modules.sql.userinfo_sql as sql
-from perry import dispatcher, SUDO_USERS
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.extraction import extract_user
-from perry.modules.helper_funcs.alternate import typing_action
+import kaguya.modules.sql.userinfo_sql as sql
+from kaguya import dispatcher, SUDO_USERS
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.extraction import extract_user
+from kaguya.modules.helper_funcs.alternate import typing_action
 
 
 @typing_action
