@@ -1,6 +1,5 @@
-# Perry
-> Forked from skyleebot by starryboi.
-> Note: Please fork this project instead of using the bot, this is mainly for the use in the finf group.
+# Kaguya
+This bot is forked from skylee
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
@@ -10,7 +9,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Actively Maintained](https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
-![logo](https://telegra.ph/file/39c9eb2839d62825da531.png)
+![logo](https://telegra.ph/file/eb5bdd47326d1eda8350f.jpg)
 
 
 A modular Telegram Python bot running on python3 with an sqlalchemy database.
@@ -19,9 +18,9 @@ Starting of as a simple group management bot with multiple admin features, it ha
 simple to use. Note that this project uses well-known Telegram-bot of it's time @BanhammerMarie_bot from Paul Larson as it's base. 
 This bot is now used mainly for the finf group.
 
-Can be found on Telegram as [Perry](https://t.me/PlatapusBot).
+Can be found on Telegram as [Kaguya](https://t.me/KaguyaRobot).
 
-Join the [news channel](https://t.me/FinfBotNews) if you just want to stay in the loop about new features or
+Join the [news channel](https://t.me/utahaupd) if you just want to stay in the loop about new features or
 announcements.
 
 ## Credits
