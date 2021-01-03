@@ -6,11 +6,11 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.utils.helpers import escape_markdown
 
-import perry.modules.sql.rules_sql as sql
-from perry import dispatcher
-from perry.modules.helper_funcs.chat_status import user_admin
-from perry.modules.helper_funcs.string_handling import markdown_parser
-from perry.modules.helper_funcs.alternate import typing_action
+import kaguya.modules.sql.rules_sql as sql
+from kaguya import dispatcher
+from kaguya.modules.helper_funcs.chat_status import user_admin
+from kaguya.modules.helper_funcs.string_handling import markdown_parser
+from kaguya.modules.helper_funcs.alternate import typing_action
 
 
 @typing_action
