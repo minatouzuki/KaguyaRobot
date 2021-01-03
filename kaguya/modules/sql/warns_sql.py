@@ -11,7 +11,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.dialects import postgresql
 
-from perry.modules.sql import SESSION, BASE
+from kaguya.modules.sql import SESSION, BASE
 
 
 class Warns(BASE):
