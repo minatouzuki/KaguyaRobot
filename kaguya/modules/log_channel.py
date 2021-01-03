@@ -1,5 +1,5 @@
 from functools import wraps
-from perry.modules.helper_funcs.misc import is_module_loaded
+from kaguya.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
