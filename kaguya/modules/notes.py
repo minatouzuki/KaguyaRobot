@@ -19,21 +19,21 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import perry.modules.sql.notes_sql as sql
-from perry import dispatcher, MESSAGE_DUMP, LOGGER
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.chat_status import (
+import kaguya.modules.sql.notes_sql as sql
+from kaguya import dispatcher, MESSAGE_DUMP, LOGGER
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from perry.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from perry.modules.helper_funcs.msg_types import get_note_type
-from perry.modules.helper_funcs.string_handling import (
+from kaguya.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from kaguya.modules.helper_funcs.msg_types import get_note_type
+from kaguya.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from perry.modules.helper_funcs.alternate import typing_action
-from perry.modules.connection import connected
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya.modules.connection import connected
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")
