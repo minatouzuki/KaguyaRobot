@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from perry import dispatcher, LOGGER
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.chat_status import (
+from kaguya import dispatcher, LOGGER
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.chat_status import (
     bot_admin,
     user_admin,
     is_user_ban_protected,
@@ -15,11 +15,11 @@ from perry.modules.helper_funcs.chat_status import (
     is_user_admin,
     is_user_in_chat,
 )
-from perry.modules.helper_funcs.extraction import extract_user_and_text
-from perry.modules.helper_funcs.string_handling import extract_time
-from perry.modules.helper_funcs.admin_rights import user_can_ban
-from perry.modules.helper_funcs.alternate import typing_action
-from perry.modules.log_channel import loggable
+from kaguya.modules.helper_funcs.extraction import extract_user_and_text
+from kaguya.modules.helper_funcs.string_handling import extract_time
+from kaguya.modules.helper_funcs.admin_rights import user_can_ban
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya.modules.log_channel import loggable
 
 
 @bot_admin
