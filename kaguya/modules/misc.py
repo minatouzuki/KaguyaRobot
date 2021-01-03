@@ -23,7 +23,7 @@ from telegram.ext import CommandHandler, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 from telegram.error import BadRequest
 
-from perry import (
+from kaguya import (
     dispatcher,
     OWNER_ID,
     SUDO_USERS,
@@ -32,11 +32,11 @@ from perry import (
     WALL_API,
     spamwtc,
 )
-from perry.__main__ import STATS, USER_INFO, GDPR
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.extraction import extract_user
-from perry.modules.helper_funcs.filters import CustomFilters
-from perry.modules.helper_funcs.alternate import typing_action, send_action
+from kaguya.__main__ import STATS, USER_INFO, GDPR
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.extraction import extract_user
+from kaguya.modules.helper_funcs.filters import CustomFilters
+from kaguya.modules.helper_funcs.alternate import typing_action, send_action
 
 
 @typing_action
