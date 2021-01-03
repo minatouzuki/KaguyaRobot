@@ -5,11 +5,11 @@ from telegram import ParseMode, Update, Chat
 from telegram.ext import CommandHandler, MessageHandler
 from telegram.utils.helpers import escape_markdown
 
-from perry import dispatcher
-from perry.modules.helper_funcs.handlers import CMD_STARTERS
-from perry.modules.helper_funcs.misc import is_module_loaded
-from perry.modules.helper_funcs.alternate import send_message, typing_action
-from perry.modules.connection import connected
+from kaguya import dispatcher
+from kaguya.modules.helper_funcs.handlers import CMD_STARTERS
+from kaguya.modules.helper_funcs.misc import is_module_loaded
+from kaguya.modules.helper_funcs.alternate import send_message, typing_action
+from kaguya.modules.connection import connected
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -20,7 +20,7 @@ if is_module_loaded(FILENAME):
         is_user_admin,
     )
 
-    from perry.modules.sql import disable_sql as sql
+    from kaguya.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
