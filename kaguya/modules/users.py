@@ -6,9 +6,9 @@ from telegram import TelegramError
 from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler
 
-import perry.modules.sql.users_sql as sql
-from perry import dispatcher, OWNER_ID, LOGGER
-from perry.modules.helper_funcs.filters import CustomFilters
+import kaguya.modules.sql.users_sql as sql
+from kaguya import dispatcher, OWNER_ID, LOGGER
+from kaguya.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
 CHAT_GROUP = 10
