@@ -7,9 +7,9 @@ from emoji import UNICODE_EMOJI
 
 from telegram import ChatAction
 
-from perry import dispatcher
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.alternate import typing_action, send_action
+from kaguya import dispatcher
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.alternate import typing_action, send_action
 
 from googletrans import Translator
 
