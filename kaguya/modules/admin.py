@@ -7,26 +7,26 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from perry import dispatcher
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.chat_status import (
+from kaguya import dispatcher
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.chat_status import (
     bot_admin,
     can_promote,
     user_admin,
     can_pin,
 )
-from perry.modules.helper_funcs.extraction import (
+from kaguya.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from perry.modules.helper_funcs.admin_rights import (
+from kaguya.modules.helper_funcs.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
-from perry.modules.helper_funcs.alternate import typing_action
-from perry.modules.connection import connected
-from perry.modules.log_channel import loggable
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya.modules.connection import connected
+from kaguya.modules.log_channel import loggable
 
 
 @bot_admin
