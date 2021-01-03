@@ -1,4 +1,4 @@
-from perry import client, SUDO_USERS
+from kaguya import client, SUDO_USERS
 
 import asyncio
 from telethon import events
