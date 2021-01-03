@@ -2,7 +2,7 @@ from enum import IntEnum, unique
 
 from telegram import Message
 
-from perry.modules.helper_funcs.string_handling import button_markdown_parser
+from kaguya.modules.helper_funcs.string_handling import button_markdown_parser
 
 
 @unique
