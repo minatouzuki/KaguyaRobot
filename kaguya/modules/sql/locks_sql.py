@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from perry.modules.sql import SESSION, BASE
+from kaguya.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
