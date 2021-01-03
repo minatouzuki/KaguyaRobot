@@ -12,11 +12,11 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from perry import dispatcher, LOGGER
-from perry.modules.helper_funcs.chat_status import user_not_admin, user_admin
-from perry.modules.helper_funcs.alternate import typing_action
-from perry.modules.log_channel import loggable
-from perry.modules.sql import reporting_sql as sql
+from kaguya import dispatcher, LOGGER
+from kaguya.modules.helper_funcs.chat_status import user_not_admin, user_admin
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya.modules.log_channel import loggable
+from kaguya.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
 
