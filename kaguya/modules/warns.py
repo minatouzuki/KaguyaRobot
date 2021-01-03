@@ -20,26 +20,26 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from perry import dispatcher  # BAN_STICKER
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.chat_status import (
+from kaguya import dispatcher  # BAN_STICKER
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.chat_status import (
     is_user_admin,
     bot_admin,
     user_admin_no_reply,
     user_admin,
     can_restrict,
 )
-from perry.modules.helper_funcs.extraction import (
+from kaguya.modules.helper_funcs.extraction import (
     extract_text,
     extract_user_and_text,
     extract_user,
 )
-from perry.modules.helper_funcs.filters import CustomFilters
-from perry.modules.helper_funcs.misc import split_message
-from perry.modules.helper_funcs.string_handling import split_quotes
-from perry.modules.helper_funcs.alternate import typing_action
-from perry.modules.log_channel import loggable
-from perry.modules.sql import warns_sql as sql
+from kaguya.modules.helper_funcs.filters import CustomFilters
+from kaguya.modules.helper_funcs.misc import split_message
+from kaguya.modules.helper_funcs.string_handling import split_quotes
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya.modules.log_channel import loggable
+from kaguya.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = (
