@@ -6,14 +6,14 @@ from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from perry import dispatcher
-from perry.modules.helper_funcs.chat_status import is_user_admin, user_admin
-from perry.modules.helper_funcs.string_handling import extract_time
-from perry.modules.log_channel import loggable
-from perry.modules.sql import antiflood_sql as sql
-from perry.modules.connection import connected
+from kaguya import dispatcher
+from kaguya.modules.helper_funcs.chat_status import is_user_admin, user_admin
+from kaguya.modules.helper_funcs.string_handling import extract_time
+from kaguya.modules.log_channel import loggable
+from kaguya.modules.sql import antiflood_sql as sql
+from kaguya.modules.connection import connected
 
-from perry.modules.helper_funcs.alternate import send_message, typing_action
+from kaguya.modules.helper_funcs.alternate import send_message, typing_action
 
 FLOOD_GROUP = 3
 
