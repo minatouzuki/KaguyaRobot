@@ -9,9 +9,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler
     from telegram.utils.helpers import escape_markdown
 
-    from perry import dispatcher, LOGGER
-    from perry.modules.helper_funcs.chat_status import user_admin
-    from perry.modules.sql import log_channel_sql as sql
+    from kaguya import dispatcher, LOGGER
+    from kaguya.modules.helper_funcs.chat_status import user_admin
+    from kaguya.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
