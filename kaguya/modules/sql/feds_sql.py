@@ -3,8 +3,8 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, Integer, Boolean
 from telegram.error import BadRequest, Unauthorized
 
-from perry import dispatcher
-from perry.modules.sql import SESSION, BASE
+from kaguya import dispatcher
+from kaguya.modules.sql import SESSION, BASE
 
 
 class Federations(BASE):
