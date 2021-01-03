@@ -6,16 +6,16 @@ from telegram.ext import Filters, CommandHandler
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown
 
-from perry.modules.helper_funcs.extraction import extract_user
-from perry.modules.helper_funcs.filters import CustomFilters
-from perry.modules.helper_funcs.alternate import typing_action
-from perry import dispatcher, SUDO_USERS, SUPPORT_USERS, LOGGER
-from perry.modules.disable import (
+from kaguya.modules.helper_funcs.extraction import extract_user
+from kaguya.modules.helper_funcs.filters import CustomFilters
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya import dispatcher, SUDO_USERS, SUPPORT_USERS, LOGGER
+from kaguya.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
 
-import perry.modules.helper_funcs.fun_strings as fun
+import kaguya.modules.helper_funcs.fun_strings as fun
 
 
 @typing_action
