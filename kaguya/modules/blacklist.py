@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import perry.modules.sql.blacklist_sql as sql
-from perry import dispatcher, LOGGER
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from perry.modules.helper_funcs.extraction import extract_text
-from perry.modules.helper_funcs.misc import split_message
-from perry.modules.log_channel import loggable
-from perry.modules.warns import warn
-from perry.modules.helper_funcs.string_handling import extract_time
-from perry.modules.connection import connected
+import kaguya.modules.sql.blacklist_sql as sql
+from kaguya import dispatcher, LOGGER
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from kaguya.modules.helper_funcs.extraction import extract_text
+from kaguya.modules.helper_funcs.misc import split_message
+from kaguya.modules.log_channel import loggable
+from kaguya.modules.warns import warn
+from kaguya.modules.helper_funcs.string_handling import extract_time
+from kaguya.modules.connection import connected
 
-from perry.modules.helper_funcs.alternate import send_message, typing_action
+from kaguya.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
