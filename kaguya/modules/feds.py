@@ -20,7 +20,7 @@ from telegram import (
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telegram.utils.helpers import mention_html, mention_markdown
 
-from perry import (
+from kaguya import (
     dispatcher,
     OWNER_ID,
     SUDO_USERS,
@@ -28,18 +28,18 @@ from perry import (
     MESSAGE_DUMP,
     LOGGER,
 )
-from perry.modules.helper_funcs.chat_status import is_user_admin
-from perry.modules.helper_funcs.extraction import (
+from kaguya.modules.helper_funcs.chat_status import is_user_admin
+from kaguya.modules.helper_funcs.extraction import (
     extract_user,
     extract_unt_fedban,
     extract_user_fban,
 )
-from perry.modules.helper_funcs.string_handling import markdown_parser
-from perry.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.string_handling import markdown_parser
+from kaguya.modules.disable import DisableAbleCommandHandler
 
-import perry.modules.sql.feds_sql as sql
+import kaguya.modules.sql.feds_sql as sql
 
-from perry.modules.helper_funcs.alternate import (
+from kaguya.modules.helper_funcs.alternate import (
     send_message,
     typing_action,
     send_action,
