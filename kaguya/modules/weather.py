@@ -3,9 +3,9 @@ from pytz import country_names as cname
 from telegram import ParseMode
 from telegram.error import BadRequest
 
-from perry import dispatcher, API_WEATHER as APPID
-from perry.modules.disable import DisableAbleCommandHandler
-from perry.modules.helper_funcs.alternate import typing_action
+from kaguya import dispatcher, API_WEATHER as APPID
+from kaguya.modules.disable import DisableAbleCommandHandler
+from kaguya.modules.helper_funcs.alternate import typing_action
 
 
 @typing_action
