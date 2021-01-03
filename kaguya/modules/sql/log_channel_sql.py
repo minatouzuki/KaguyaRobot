@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, func, distinct
 
-from perry.modules.sql import BASE, SESSION
+from kaguya.modules.sql import BASE, SESSION
 
 
 class GroupLogs(BASE):
