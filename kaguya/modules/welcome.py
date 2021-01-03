@@ -18,22 +18,22 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import perry.modules.sql.welcome_sql as sql
-from perry.modules.sql.global_bans_sql import is_user_gbanned
-from perry import dispatcher, OWNER_ID, LOGGER, MESSAGE_DUMP, spamwtc
-from perry.modules.helper_funcs.chat_status import (
+import kaguya.modules.sql.welcome_sql as sql
+from kaguya.modules.sql.global_bans_sql import is_user_gbanned
+from kaguya import dispatcher, OWNER_ID, LOGGER, MESSAGE_DUMP, spamwtc
+from kaguya.modules.helper_funcs.chat_status import (
     user_admin,
     is_user_ban_protected,
 )
-from perry.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from perry.modules.helper_funcs.msg_types import get_welcome_type
-from perry.modules.helper_funcs.alternate import typing_action
-from perry.modules.helper_funcs.string_handling import (
+from kaguya.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from kaguya.modules.helper_funcs.msg_types import get_welcome_type
+from kaguya.modules.helper_funcs.alternate import typing_action
+from kaguya.modules.helper_funcs.string_handling import (
     markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from perry.modules.log_channel import loggable
+from kaguya.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = [
     "first",
