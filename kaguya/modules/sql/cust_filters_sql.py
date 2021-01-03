@@ -10,8 +10,8 @@ from sqlalchemy import (
     func,
 )
 
-from perry.modules.helper_funcs.msg_types import Types
-from perry.modules.sql import BASE, SESSION
+from kaguya.modules.helper_funcs.msg_types import Types
+from kaguya.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
